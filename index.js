@@ -17,6 +17,13 @@ app.get("/testing", (req, res) => {
     })
 })
 
+app.get("/new",(req,res) => {
+    return res.json({
+        msg: "This is testing with new branch",
+        detail: "testing github actions with new branch and seeing the merge concept."
+    })
+})
+
 app.listen(PORT, ()=>{
     console.log(`Server is up and running on PORT ${PORT} `)
 })
