@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 app.get("/testing", (req, res) => {
     return res.json({
         msg: "Hello this is testing",
-        detail: "I am testing github actions."
+        detail: "I am testing github actions. and it is successfully done."
     })
 })
 
