@@ -10,6 +10,13 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/testing", (req, res) => {
+    return res.json({
+        msg: "Hello this is testing",
+        detail: "I am testing github actions."
+    })
+})
+
 app.listen(PORT, ()=>{
     console.log(`Server is up and running on PORT ${PORT} `)
 })
